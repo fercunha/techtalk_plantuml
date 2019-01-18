@@ -1,0 +1,39 @@
+@startuml
+
+title Genki Dama Kakaroto
+
+actor Freeza as f #Purple
+actor Kuririn as k
+actor Goku as g #Black 
+participant Pessoas as p #GreenYellow 
+
+k ->x f: Ataque!
+f --> k: Hahahaha
+f -> k: Peido
+hnote over k: Morreu
+
+g -> f: Oi, eu sou o Goku!
+g ->o f: Kamehameha!
+
+rnote right g: Carregar Genki Dama
+
+activate g #LightBlue
+g -> p: Me de o seu poder.
+p --> g: Poder
+g -> p: Me de o seu poder.
+p --> g: Poder
+g -> p: Me de o seu poder.
+p --> g: Poder
+...5 episódios...
+g -> p: Me de o seu poder.
+p --> g: Poder
+deactivate g
+
+g -[#0000FF]> f: <color #blue>**Genki Dama**</color>
+
+hnote over f: Mórrêu
+
+note over g: Salvou o dia!
+
+
+@enduml
